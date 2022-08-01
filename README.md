@@ -1,7 +1,8 @@
 // Plan
 1. icon import and sow.
 2. file structure wile build. asset/css, asset/imaes
-
+# NOTE:
+Basically its part of my project, so it has unnecesssary redux code. :( otherwise it workable.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

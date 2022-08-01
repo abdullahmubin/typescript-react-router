@@ -23,6 +23,11 @@ module.exports = {
       extensions: [".js", ".json", ".ts", ".tsx"],
     },
     devtool: 'inline-source-map',
+    devServer: {
+      historyApiFallback: true,
+      contentBase: './',
+      hot: true
+   },
     module: {
       rules: [
         { test: /\.(t|j)sx?$/, use: { loader: 'ts-loader' }, exclude: /node_modules/, },
