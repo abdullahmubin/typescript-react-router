@@ -4,10 +4,16 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet, useParams } from 
 import logo from './logo.svg';
 import './App.css';
 import './base.scss'
+import './assets/css/styles.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from './state';
 import { RootState } from './state/reducers';
+
+import Navibar  from './components/Navbar'
+
+import Home  from './components/Home'
+
 
 import img from './logo.png';
 
@@ -53,17 +59,7 @@ function App() {
 
 
       <Router>
-        <nav style={{ margin: 10 }}>
-          <Link to="/" style={{ padding: 5 }}>
-            Home
-          </Link>
-          <Link to="/about" style={{ padding: 5 }}>
-            About
-          </Link>
-          <Link to="/posts" style={{ padding: 5 }}>
-            Posts
-          </Link>
-        </nav>
+        <Navibar />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -81,14 +77,7 @@ function App() {
   );
 }
 
-function Home() {
-  return (
-    <div style={{ padding: 20 }}>
-      <h2>Home View</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-    </div>
-  );
-}
+
 
 function About() {
   return (

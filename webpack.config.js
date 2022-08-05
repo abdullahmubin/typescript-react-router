@@ -37,12 +37,24 @@ module.exports = {
         //   type: 'asset/resource',
         // },
         {
-          test: /\.(png|ico|jpe?g|gif)$/i,
-          loader: 'file-loader',
-          options: {
-            name: '[path][name].[contenthash].[ext]',
-            outputPath: 'images',
+          test: /\.(png|jpg|ico|jpe?g|gif)$/i,
+          // loader: 'file-loader',
+          type: 'asset',
+          parser: {
+            dataUrlCondition: {
+              maxSize: 8192
+            }
           },
+          generator : {
+            filename : 'images/[name].[contenthash].[ext]',
+            // 'images/[path][name].[contenthash].[ext]',
+          }
+          // type: 'asset/resource',
+          // options: {
+          //   limit: 8192,
+          //   name: '[path][name].[contenthash].[ext]',
+          //   outputPath: 'images',
+          // },
         },
         // {
         //   test: /.*\.(gif|ico|png|jp(e*)g|svg)$/i,

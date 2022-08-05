@@ -1,0 +1,63 @@
+// image-url arguments:
+// $path: path relative to images directory in config.rb
+// $path-only: if true, will cause only the path to be returned instead of a `url()` function
+// $cache-buster: When set to `false` no cache buster will be used (i.e. `?313420982`)
+$header-img: url('./bread.jpg');
+$choosePlatform-img: url('./../images/benefits-bg.svg');
+$defaultBoxShadow: 0 0 5px 5px #ddd;
+
+.slider-im {
+  background-image: $header-img;
+  height: 450px;
+}
+
+.slider-box-title {
+  line-height: 350px;
+}
+
+.choose-platform-body {
+  margin-top: 20px;
+  background-image: $choosePlatform-img;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+
+  .choose-card {
+    box-shadow: $defaultBoxShadow;
+    margin-bottom: 15px;
+
+
+    .card-img {
+      margin: 5px;
+      width: 50px;
+      height: 50px;
+      float: left;
+      display: block;
+    }
+
+    .card-img-details {
+      display: block;
+      width: 90%;
+      float: left;
+      text-align: left;
+
+      .card-img-details-heading {
+        margin: 5px;
+        text-transform: capitalize;
+      }
+
+      .card-img-details-para {
+        margin: 5px;
+      }
+    }
+
+  }
+
+
+}
+
+.choose-card-no-sadow {
+  border: none;
+  text-align: left;
+  margin: 40px;
+  margin-top: 0px;
+}
