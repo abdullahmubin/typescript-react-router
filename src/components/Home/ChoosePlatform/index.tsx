@@ -15,7 +15,7 @@ export default function ChoosePlatform() {
 
         <Container className='choose-platform-body' fluid>
             <Container>
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-md-center choose-platform-body-container">
                    
                     <Col md={6}>
                         <Row>

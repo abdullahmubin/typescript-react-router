@@ -4,6 +4,7 @@
 // $cache-buster: When set to `false` no cache buster will be used (i.e. `?313420982`)
 $header-img: url('./bread.jpg');
 $choosePlatform-img: url('./../images/benefits-bg.svg');
+$priceBG-img: url('./../images/price.png');
 $defaultBoxShadow: 0 0 5px 5px #ddd;
 
 .slider-im {
@@ -20,6 +21,11 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
   background-image: $choosePlatform-img;
   background-repeat: no-repeat;
   margin-top: 100px;
+
+  .choose-platform-body-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
   .choose-card {
     box-shadow: $defaultBoxShadow;
@@ -60,4 +66,60 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
   text-align: left;
   margin: 40px;
   margin-top: 0px;
+}
+
+.deliver-best-container {
+  text-align: left;
+
+  .deliver-best-container-body {
+    .deliver-best-left {
+      margin-top: 100px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      width: 100%;
+
+    }
+
+    img {
+      float: left;
+    }
+
+    p {
+      margin: 2px;
+      margin-bottom: 15px;
+      margin-left: 35px;
+    }
+
+  }
+}
+
+.custom-cv-card {
+  box-shadow: $defaultBoxShadow;
+
+  img {
+    width: 250px;
+  }
+
+  h3 {
+    line-height: 180px;
+  }
+
+  .request-a-demo-btn {
+    line-height: 180px;
+  }
+}
+
+.price-card {
+  background-image: $priceBG-img;
+  background-repeat: no-repeat;
+  background-position: right -10px;
+
 }

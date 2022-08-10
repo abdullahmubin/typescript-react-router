@@ -1,6 +1,9 @@
 import Slider from './../Slider'
 
 import ChoosePlatform from './ChoosePlatform'
+import DeliverBest from './DeliverBest'
+import CustomCVCard from './CustomCVCard'
+import Price from './Price'
 
 export default function Home() {
     return (
@@ -8,6 +11,10 @@ export default function Home() {
         <Slider/>
 
         <ChoosePlatform/>
+
+        <DeliverBest />
+        <CustomCVCard />
+        <Price />
         <h2>Home View</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
       </div>
