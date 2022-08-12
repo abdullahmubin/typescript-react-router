@@ -123,3 +123,22 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
   background-position: right -10px;
 
 }
+.price-number {
+  color: #fff;
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.monthly-pack-details {
+  h3 {
+    text-align: left;
+  }
+  p{
+    text-align: left;
+  }
+
+  Button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
