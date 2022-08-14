@@ -123,6 +123,7 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
   background-position: right -10px;
 
 }
+
 .price-number {
   color: #fff;
   text-align: right;
@@ -133,23 +134,24 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
   h3 {
     text-align: left;
   }
-  p{
+
+  p {
     text-align: left;
   }
 
-  Button{
+  Button {
     margin-top: 30px;
     margin-bottom: 20px;
   }
 }
 
-.creative-template-section{
+.creative-template-section {
   margin-top: 150px;
 
-  p{
+  p {
     width: 600px;
     margin: auto;
-    
+
 
   }
 
@@ -162,7 +164,7 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
       margin: auto;
     }
 
-    .demo-template-btn{
+    .demo-template-btn {
       width: 400px;
       margin: auto;
       margin-top: 15px;
@@ -174,12 +176,34 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
 
   .our-main-feature-title {
 
-    h2 {
 
-    }
+    h2 {}
 
     p {
-      
+      width: 600px;
+      margin: auto;
+    }
+
+    
+  }
+
+  .main-feature-item {
+    margin: auto;
+    width: 350px;
+    margin-bottom: 25px;
+  }
+}
+
+.mainfeature-card {
+  box-shadow: $defaultBoxShadow;
+
+  .main-feature-item-details{
+    img {
+      width: 50px;
+    }
+
+    h3 {
+      font-size: 20px;
     }
   }
 }
