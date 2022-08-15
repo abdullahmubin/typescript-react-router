@@ -184,7 +184,7 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
       margin: auto;
     }
 
-    
+
   }
 
   .main-feature-item {
@@ -197,7 +197,7 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
 .mainfeature-card {
   box-shadow: $defaultBoxShadow;
 
-  .main-feature-item-details{
+  .main-feature-item-details {
     img {
       width: 50px;
     }
@@ -206,4 +206,31 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
       font-size: 20px;
     }
   }
+}
+
+.your-success-container {
+  h2 {}
+
+  p {
+    width: 600px;
+    margin: auto;
+  }
+
+  .success-client-details {
+    img {
+      width: 50%;
+      border-radius: 50%;
+    }
+
+    p {
+      width: auto;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-top: 25px;
+    }
+  }
+
 }

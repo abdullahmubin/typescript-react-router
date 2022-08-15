@@ -6,6 +6,7 @@ import CustomCVCard from './CustomCVCard'
 import Price from './Price'
 import CreativeTemplate from './CreativeTemplate'
 import MainFeature from './MainFeature'
+import YourSuccess from './YourSuccess'
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Price />
         <CreativeTemplate />
         <MainFeature />
+        <YourSuccess />
         <h2>Home View</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
       </div>
