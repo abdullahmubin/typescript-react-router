@@ -7,6 +7,7 @@ import Price from './Price'
 import CreativeTemplate from './CreativeTemplate'
 import MainFeature from './MainFeature'
 import YourSuccess from './YourSuccess'
+import Footer from './Footer'
 
 export default function Home() {
     return (
@@ -21,8 +22,8 @@ export default function Home() {
         <CreativeTemplate />
         <MainFeature />
         <YourSuccess />
-        <h2>Home View</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
+        <Footer />
+        
       </div>
     );
   }

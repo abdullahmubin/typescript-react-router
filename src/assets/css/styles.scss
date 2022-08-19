@@ -6,6 +6,7 @@ $header-img: url('./bread.jpg');
 $choosePlatform-img: url('./../images/benefits-bg.svg');
 $priceBG-img: url('./../images/price.png');
 $defaultBoxShadow: 0 0 5px 5px #ddd;
+$footerB-img: url('./../images/footer-bg1.png');
 
 .slider-im {
   background-image: $header-img;
@@ -233,4 +234,47 @@ $defaultBoxShadow: 0 0 5px 5px #ddd;
     }
   }
 
+}
+
+
+.footer-container {
+  background-image: $footerB-img;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #fff;
+
+  .contact-us-footer {
+    background-color: #192057;
+  }
+
+  .company-details-footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    p {
+      width: 200px;
+      margin: auto;
+    }
+  }
+
+  .tips-footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    ul{
+      list-style-type: none;
+      padding: 0;
+
+      li{
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .contact-us-footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
