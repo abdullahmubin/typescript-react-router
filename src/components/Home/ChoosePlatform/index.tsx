@@ -10,7 +10,7 @@ import d2 from './../../../assets/images/d2.png';
 import d3 from './../../../assets/images/d3.png';
 
 
-export default function ChoosePlatform() {
+const ChoosePlatform: React.FC = () => {
     return (
 
         <Container className='choose-platform-body' fluid>
@@ -79,3 +79,5 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae 
 
     )
 }
+
+export default ChoosePlatform;

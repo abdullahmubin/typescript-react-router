@@ -11,7 +11,7 @@ import cv from './../../../assets/images/cv.png'
 import Button from 'react-bootstrap/Button';
 
 
-export default function CustomCVCard() {
+const CustomCVCard: React.FC = () => {
     return (
 
         <Container className='custom-cv-container'>
@@ -51,3 +51,5 @@ export default function CustomCVCard() {
 
     )
 }
+
+export default CustomCVCard;

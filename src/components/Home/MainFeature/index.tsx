@@ -17,7 +17,7 @@ import f6 from './../../../assets/images/f6.png'
 import Button from 'react-bootstrap/Button';
 // demo-1.png
 
-export default function MainFeature() {
+const MainFeature: React.FC = () => {
     return (
 
         <Container className='our-main-feature'>
@@ -162,3 +162,5 @@ export default function MainFeature() {
 
     )
 }
+
+export default MainFeature;

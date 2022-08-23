@@ -11,7 +11,7 @@ import demo from './../../../assets/images/demo-1.png'
 import Button from 'react-bootstrap/Button';
 // demo-1.png
 
-export default function CreativeTemplate() {
+const CreativeTemplate: React.FC = () => {
     return (
         <Container className='creative-template-section'>
             <Row>
@@ -56,3 +56,5 @@ export default function CreativeTemplate() {
 
     )
 }
+
+export default CreativeTemplate;

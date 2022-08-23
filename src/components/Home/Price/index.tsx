@@ -11,7 +11,7 @@ import cv from './../../../assets/images/cv.png'
 import Button from 'react-bootstrap/Button';
 
 
-export default function Price() {
+const Price: React.FC = () => {
     return (
 
         <Container className='price-cv-container'>
@@ -84,3 +84,5 @@ export default function Price() {
 
     )
 }
+
+export default Price;

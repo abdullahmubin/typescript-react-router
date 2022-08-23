@@ -11,7 +11,7 @@ import im3 from './../../../assets/images/3.jpg'
 import Button from 'react-bootstrap/Button';
 // demo-1.png
 
-export default function YourSuccess() {
+const YourSuccess: React.FC = () => {
 
 
     return (
@@ -59,3 +59,5 @@ export default function YourSuccess() {
     )
 
 }
+
+export default YourSuccess;

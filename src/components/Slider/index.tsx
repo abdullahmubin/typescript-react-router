@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-export default function Slider() {
+const Slider: React.FC = () => {
     return (
 
         <Container>
@@ -17,3 +17,5 @@ export default function Slider() {
 
     )
 }
+
+export default Slider;

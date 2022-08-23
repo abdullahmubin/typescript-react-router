@@ -8,7 +8,7 @@ import check from './../../../assets/images/check.png'
 import cv from './../../../assets/images/cv.png'
 
 
-export default function DeliverBest() {
+const DeliverBest: React.FC = () => {
     return (
 
         <Container className='deliver-best-container'>
@@ -57,3 +57,5 @@ export default function DeliverBest() {
 
     )
 }
+
+export default DeliverBest;
