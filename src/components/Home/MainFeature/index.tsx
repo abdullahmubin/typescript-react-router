@@ -17,17 +17,26 @@ import f6 from './../../../assets/images/f6.png'
 import Button from 'react-bootstrap/Button';
 // demo-1.png
 
+import CircleColor from './../../Shared/ColorCircle'
+const colors = [
+    { color: 'rgb(7, 239, 88)' },
+    { color: '#555' },
+    { color: 'rgb(239, 208, 7)' },
+    { color: 'rgb(239, 84, 7)' },
+    { color: 'rgb(239, 7, 223)' },
+]
+
+
 const MainFeature: React.FC = () => {
     return (
 
         <Container className='our-main-feature'>
+            <Col>
+                <CircleColor colors={colors} sectionTitle={`Our main feature`} sectionSubTitle={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.`} />
+            </Col>
+
             <Row>
-                <Col sm={12} className='our-main-feature-title'>
-                    <Row>
-                        <h2>Our main feature</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                    </Row>
-                </Col>
+                
                 {/* custom-cv-card */}
                 <Col>
                     <Row>

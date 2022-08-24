@@ -10,13 +10,25 @@ import cv from './../../../assets/images/cv.png'
 
 import Button from 'react-bootstrap/Button';
 
+import CircleColor from './../../Shared/ColorCircle'
+const colors = [
+    { color: 'rgb(7, 239, 88)' },
+    { color: '#555' },
+    { color: 'rgb(239, 208, 7)' },
+    { color: 'rgb(239, 84, 7)' },
+    { color: 'rgb(239, 7, 223)' },
+]
 
 const Price: React.FC = () => {
     return (
 
         <Container className='price-cv-container'>
+            <Col>
+                <CircleColor colors={colors} sectionTitle={`Easy Price!!!`} sectionSubTitle={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.`} />
+            </Col>
+
             <Row className="justify-content-md-center price-container-body">
-                <Col md={{span: 5}}>
+                <Col md={{ span: 5 }}>
                     <Row className="our-price-div">
                         <h3>Our Pricing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
@@ -24,9 +36,9 @@ const Price: React.FC = () => {
                     </Row>
                 </Col>
                 <Col md={{ span: 6, offset: 1 }} className='p-0'>
-                 <Row>
-                    <Col >
-                      
+                    <Row>
+                        <Col >
+
                             <Card className="monthly price-card custom-cv-card p-0">
                                 <Card.Body>
                                     <Row>
@@ -47,10 +59,10 @@ const Price: React.FC = () => {
 
                                 </Card.Body>
                             </Card>
-                       
-                    </Col>
-                    <Col>
-                      
+
+                        </Col>
+                        <Col>
+
                             <Card className="yearly price-card custom-cv-card p-0">
                                 <Card.Body>
                                     <Row>
@@ -71,9 +83,9 @@ const Price: React.FC = () => {
 
                                 </Card.Body>
                             </Card>
-                      
 
-                    </Col>
+
+                        </Col>
                     </Row>
                 </Col>
 

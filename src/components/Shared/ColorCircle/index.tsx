@@ -4,24 +4,27 @@ interface colorInterface {
     colors: {
         color: string
     }[],
+    sectionTitle: string,
+    sectionSubTitle?: string 
 }
 
 const CircleColor = (props: colorInterface) => {
     console.log(`props.colors`);
     console.log(props.colors)
     let test = props.colors.map(i => {
-        return (<div className='circle-block ' key={i.color} style={{ backgroundColor: i.color }}>
+        return (<span className='circle-block ' key={i.color} style={{ backgroundColor: i.color }}>
 
-        </div>)
+        </span>)
     })
 
     console.log(test)
     return (
-        <div>
+        <div className='color-title-container'>
             {
                 test
             }
-
+            <h3 className='card-no-img-details-heading'>{props.sectionTitle}</h3>
+            <p>{props.sectionSubTitle}</p>
 
         </div>
     )

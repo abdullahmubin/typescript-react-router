@@ -6,16 +6,27 @@ import Col from 'react-bootstrap/Col';
 
 import check from './../../../assets/images/check.png'
 import cv from './../../../assets/images/cv.png'
+import CircleColor from './../../Shared/ColorCircle'
 
+const colors = [
+    { color: 'rgb(7, 239, 88)' },
+    { color: '#555' },
+    { color: 'rgb(239, 208, 7)' },
+    { color: 'rgb(239, 84, 7)' },
+    { color: 'rgb(239, 7, 223)' }
+]
 
 const DeliverBest: React.FC = () => {
     return (
 
         <Container className='deliver-best-container'>
+            <Col style={{ textAlign: `center`}}>
+                <CircleColor colors={colors} sectionTitle={`We Deliver The Best?`} />
+            </Col>
+
             <Row className="justify-content-md-center deliver-best-container-body">
                 <Col>
                     <Row className="deliver-best-left">
-                        <h3>We Deliver The Best</h3>
                         <ul>
                             <li>
                                 <img src={check} />
