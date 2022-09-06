@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import './base.scss'
 import './assets/css/styles.scss';
+import './assets/css/firsttemplate.css'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from './state';
@@ -13,6 +14,9 @@ import { RootState } from './state/reducers';
 import Navibar  from './components/Navbar'
 
 import Home  from './components/Home'
+import FirstTemp from './components/TemplateList/FirstTemp'
+
+
 
 
 import img from './logo.png';
@@ -119,6 +123,7 @@ function Post() {
     <div style={{ padding: 20 }}>
       <h3>Number of post:- {slug}</h3>
       
+      <FirstTemp />
     </div>
   );
 }
