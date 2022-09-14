@@ -17,6 +17,7 @@ import Home from './components/Home'
 import FirstTemp from './components/TemplateList/FirstTemp'
 
 let testConst = {
+  editable: true,
   idMain:1,
   necessaryColor: "Super hero squad",
   title: "Jonney Anderson",
